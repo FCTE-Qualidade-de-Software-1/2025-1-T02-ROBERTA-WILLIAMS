@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GQM - Agromart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="GQM.html">GQM</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>GQM - Agromart</h1>
+    <p>Fase de Definição</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Objetivo de Negócio do AGROMART</h2>
+      <p>
+        Aprimorar a confiabilidade e a integridade das informações cadastrais de fornecedores na plataforma Agromart, com foco em reduzir inconsistências, garantir a completude dos dados e otimizar o tempo de validação, promovendo uma base de dados sólida para tomada de decisão no setor agropecuário familiar.
+      </p>
+    </section>
+
+    <section>
+      <h2>Objetivo de Medição 1</h2>
+      <p>
+        Analisar o processo de cadastro e validação de fornecedores, com o propósito de avaliar a qualidade dos dados inseridos, com respeito à completude, correção e agilidade do processo, do ponto de vista da equipe de garantia da qualidade, no contexto da manutenção e crescimento sustentável da plataforma Agromart.
+      </p>
+    </section>
+
+    <section>
+      <h2>Questões e Hipóteses</h2>
+
+      <h3>Q1: Qual o nível de completude dos cadastros de fornecedores?</h3>
+      <p><strong>Hipótese Q1:</strong> Pelo menos 90% dos cadastros de fornecedores possuem todos os campos obrigatórios preenchidos corretamente.</p>
+
+      <h3>Q2: Qual a taxa de inconsistência ou erros nos dados fornecidos (ex.: CNPJ inválido, CEP inexistente)?</h3>
+      <p><strong>Hipótese Q2:</strong> Menos de 5% dos cadastros apresentam inconsistências ou erros de validação automática.</p>
+
+      <h3>Q3: Qual é o tempo médio para validar e aprovar um cadastro de fornecedor?</h3>
+      <p><strong>Hipótese Q3:</strong> O tempo médio de aprovação de um cadastro é inferior a 24 horas após o envio.</p>
+    </section>
+    <section>
+        <h2>Relação entre Objetivo de Medição, Questões e Métricas</h2>
+        <p><strong>Objetivo de Medição 1:</strong> Avaliar a qualidade dos cadastros de fornecedores</p>
+      
+        <ul>
+          <li><strong>Q1: Nível de completude</strong><br>
+            Métrica 1: % de cadastros com todos os campos obrigatórios preenchidos
+          </li>
+          <li><strong>Q2: Taxa de inconsistência</strong><br>
+            Métrica 2: % de cadastros com erros de validação (ex.: CNPJ, CEP, e-mail)
+          </li>
+          <li><strong>Q3: Tempo médio de validação</strong><br>
+            Métrica 3: Média de horas entre envio do cadastro e aprovação
+          </li>
+        </ul>
+      </section>
+      
+    <section>
+        <h2>Abstraction Sheet – Objetivo de Medição 1</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+          <thead style="background-color: #e0f2f1;">
+            <tr>
+              <th style="border: 1px solid #ccc; padding: 0.5rem;">Objeto</th>
+              <th style="border: 1px solid #ccc; padding: 0.5rem;">Propósito</th>
+              <th style="border: 1px solid #ccc; padding: 0.5rem;">Foco da Qualidade</th>
+              <th style="border: 1px solid #ccc; padding: 0.5rem;">Ponto de Vista</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Cadastro de Fornecedores</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Avaliação</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Completude, consistência e agilidade</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Equipe de Garantia de Qualidade</td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+      
+      <section>
+        <h2>Foco da Qualidade</h2>
+        <p>Número de problemas nos cadastros:</p>
+        <ul>
+          <li>Por tipo de campo obrigatório (CNPJ, endereço, contato, etc.)</li>
+          <li>Por tipo de erro (faltante, inválido, inconsistente)</li>
+          <li>Por frequência</li>
+          <li>Por origem (formulário manual, integração externa)</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Fatores de Variação</h2>
+        <ul>
+          <li>Grau de revisão automática (validação de campos)</li>
+          <li>Nível de treinamento dos usuários</li>
+          <li>Integração com sistemas externos (ex.: Receita Federal, Correios)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Hipóteses de Referência (Estimativas)</h2>
+        <p>Distribuição de problemas:</p>
+        <ul>
+          <li>Campos completos e válidos: 90%</li>
+          <li>Campos incompletos: 7%</li>
+          <li>Campos inconsistentes: 3%</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Impacto dos Fatores de Variação</h2>
+        <p>
+          Quanto maior o nível de validação automática e o treinamento do usuário, menor será a taxa de erros e inconsistências nos cadastros recebidos.
+        </p>
+      </section>
+      
+      <section>
+        <h2><u>Matrícula | Nome completo | Contribuição (%)</u></h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+          <thead style="background-color: #e0f2f1;">
+            <tr>
+              <th style="border: 1px solid #ccc; padding: 0.5rem;">Matrícula</th>
+              <th style="border: 1px solid #ccc; padding: 0.5rem;">Nome completo</th>
+              <th style="border: 1px solid #ccc; padding: 0.5rem;">Contribuição (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">202045965</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Augusto Campos Duarte</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">22,5%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">202017521</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Algusto Rodrigues Caldas</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">22,5%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">200060783</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Ana Beatriz Wanderley Massuh</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">22,5%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">200067095</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Lucas Antunes de Avelar</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">5%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">222006777</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Guilherme Oliveira Monteiro</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">5%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">221021975</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">Gabriel Santos Monteiro</td>
+              <td style="border: 1px solid #ccc; padding: 0.5rem;">22,5%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+        
+      
+  </main>
+
+  <footer>
+    <div class="participants">
+      <div class="participant">
+        <img src="img/Guilherme_foto.png" alt="Foto participante 1" />
+        <div class="participant-name">Guilherme Oliveira</div>
+      </div>
+      <div class="participant">
+        <img src="img/Ana_Beatriz_foto.png" alt="Foto participante 2" />
+        <div class="participant-name">Ana Beatriz</div>
+      </div>
+      <div class="participant">
+        <img src="img/Gabriel_Monteiro.png" alt="Foto participante 3" />
+        <div class="participant-name">Gabriel Monteiro</div>
+      </div>
+      <div class="participant">
+        <img src="img/Augusto_Campos.png" alt="Foto participante 4" />
+        <div class="participant-name">Augusto Campos</div>
+      </div>
+      <div class="participant">
+        <img src="img/Lucas_A..png" alt="Foto participante 5" />
+        <div class="participant-name">Lucas A.</div>
+      </div>
+      <div class="participant">
+        <img src="img/Algusto_Rodrigues.png" alt="Foto participante 6" />
+        <div class="participant-name">Algusto Rodrigues</div>
+      </div>
+    </div>
+    <p>© 2025 Projeto GitHub Page. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
