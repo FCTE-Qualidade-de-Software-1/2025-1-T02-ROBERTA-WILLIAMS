@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação de Qualidade e Gestão do Projeto AgroMart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    thead {
+      background-color: #e0f2f1;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    li ul {
+      margin-left: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="GQM.HTML">GQM</a></li>
+      <li><a href="fase1.html">Fase 1 - Propósito da Avaliação</a></li>
+      <li><a href="fase2.html">Fase 2 - Avaliação de Qualidade e Gestão</a></li>
+      <li><a href="fase3.html">Fase 3 - Planejamento da Avaliação</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Avaliação de Qualidade e Gestão do Projeto AgroMart</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Visão Geral do Projeto</h2>
+      <p>O AgroMart é um sistema que apoia as operações de uma agropecuária multicanal, abrangendo vendas de rações, medicamentos veterinários, sementes, adubos e produtos de higiene animal. Diante do alto volume de produtos e do atendimento diversificado ao cliente, avaliar e aprimorar a qualidade do sistema torna-se essencial para garantir eficiência operacional, satisfação do cliente e escalabilidade do negócio.</p>
+    </section>
+
+    <section>
+      <h2>2. Fase 1 – Propósito da Avaliação</h2>
+      <h3>2.1 Objetivo Geral</h3>
+      <ul>
+        <li>Avaliar a qualidade do AgroMart segundo a norma ISO/IEC 25010, de modo a:</li>
+        <ul>
+          <li>Identificar pontos fortes e fracos do sistema;</li>
+          <li>Priorizar ações de melhoria;</li>
+          <li>Sustentar o crescimento do negócio com processos confiáveis.</li>
+        </ul>
+      </ul>
+      <h3>2.2 Justificativa</h3>
+      <ul>
+        <li>Fluidez de vendas: reduzir tempos e cliques em balcão.</li>
+        <li>Confiabilidade de estoque: mitigar inconsistências que geram retrabalho.</li>
+        <li>Satisfação do cliente: atendimento ágil e informação clara.</li>
+        <li>Suporte ao crescimento: manter qualidade com expansão de catálogo e filiais.</li>
+      </ul>
+
+      <h3>2.3 Stakeholders</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Exemplos</th>
+            <th>Interesse Principal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Usuários Finais</td><td>Atendentes, vendedores</td><td>Velocidade de registro de vendas</td></tr>
+          <tr><td>Clientes</td><td>Agricultores, pecuaristas</td><td>Agilidade e precisão de informação</td></tr>
+          <tr><td>Equipe Administrativa</td><td>Gerentes, financeiro</td><td>Controle de estoque/receita</td></tr>
+          <tr><td>Equipe Técnica</td><td>Desenvolvedores, suporte</td><td>Facilidade de manutenção</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.4 Características de Qualidade Focadas</h3>
+      <p>Com base na ISO/IEC 25010, o time definiu inicialmente cinco características (Usabilidade, Desempenho, Confiabilidade, Manutenibilidade, Portabilidade). Posteriormente, o escopo foi refinado para concentrar-se unicamente na característica de Usabilidade, considerada crítica para acelerar vendas e reduzir curva de aprendizado.</p>
+
+      <h3>2.5 Resultados Esperados</h3>
+      <ul>
+        <li>Diagnóstico completo de usabilidade;</li>
+        <li>Métricas que sustentem decisões de UI/UX;</li>
+        <li>Plano de ação priorizado para correções;</li>
+        <li>Melhoria perceptível na satisfação dos usuários-chave.</li>
+      </ul>
+    </section>
+
+    <section>
+        <h2>3. Fase 2 – Especificar a Avaliação (Foco em Usabilidade)</h2>
+      
+        <h3>3.1 Subcaracterísticas de Usabilidade Selecionadas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Subcaracterística</th>
+              <th>Definição ISO/IEC 25010</th>
+              <th>Contexto AgroMart</th>
+              <th>Prioridade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Reconhecimento de Adequação</td>
+              <td>Usuário percebe que o sistema atende às necessidades</td>
+              <td>Vendedores encontram funções de venda rapidamente</td>
+              <td>Alta</td>
+            </tr>
+            <tr>
+              <td>Capacidade de Aprendizado</td>
+              <td>Facilidade de aprender a usar</td>
+              <td>Onboarding rápido de novos colaboradores</td>
+              <td>Muito Alta</td>
+            </tr>
+            <tr>
+              <td>Operabilidade</td>
+              <td>Facilidade de executar tarefas</td>
+              <td>Registro de vendas sem atrito</td>
+              <td>Muito Alta</td>
+            </tr>
+            <tr>
+              <td>Proteção ao Erro</td>
+              <td>Sistema previne/detecta erros</td>
+              <td>Evitar vendas duplicadas</td>
+              <td>Alta</td>
+            </tr>
+            <tr>
+              <td>Estética da Interface</td>
+              <td>Interface agradável</td>
+              <td>Layout motivador para uso diário</td>
+              <td>Média</td>
+            </tr>
+            <tr>
+              <td>Acessibilidade</td>
+              <td>Uso por pessoas com limitações</td>
+              <td>Inclusão de diversos perfis</td>
+              <td>Média</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <h3>3.1.1 Justificativa da Priorizacão</h3>
+      <ul>
+        <li><strong>Capacidade de Aprendizado</strong> e <strong>Operabilidade</strong>: impactam diretamente as margens de lucro e produtividade.</li>
+        <li><strong>Reconhecimento de Adequação</strong> e <strong>Proteção ao Erro</strong>: afetam percepção de utilidade e confiabilidade.</li>
+        <li><strong>Estética</strong> e <strong>Acessibilidade</strong>: contribuem para satisfação e inclusão.</li>
+      </ul>
+
+      <h3>3.2 Métricas e Critérios de Aceitação</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Subcaracterística</th>
+            <th>Métrica</th>
+            <th>Unidade</th>
+            <th>Mínimo</th>
+            <th>Desejado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Reconhecimento de Adequação</td>
+            <td>Taxa de reconhecimento de funcionalidade</td>
+            <td>%</td>
+            <td>&ge; 80</td>
+            <td>&ge; 95</td>
+          </tr>
+          <tr>
+            <td>Tempo p/ identificar função</td>
+            <td>s</td>
+            <td>&le; 60</td>
+            <td>&le; 30</td>
+          </tr>
+      
+          <tr>
+            <td rowspan="3">Capacidade de Aprendizado</td>
+            <td>Tempo de aprendizado inicial</td>
+            <td>min</td>
+            <td>&le; 30</td>
+            <td>&le; 15</td>
+          </tr>
+          <tr>
+            <td>Taxa de retenção de conhecimento</td>
+            <td>%</td>
+            <td>&ge; 70</td>
+            <td>&ge; 90</td>
+          </tr>
+          <tr>
+            <td>Curva de aprendizado</td>
+            <td>tarefas/dia</td>
+            <td>&ge; 5</td>
+            <td>&ge; 10</td>
+          </tr>
+      
+          <tr>
+            <td rowspan="3">Operabilidade</td>
+            <td>Tempo de execução de tarefa</td>
+            <td>s</td>
+            <td>&le; 120</td>
+            <td>&le; 60</td>
+          </tr>
+          <tr>
+            <td>Taxa de conclusão de tarefa</td>
+            <td>%</td>
+            <td>&ge; 80</td>
+            <td>&ge; 95</td>
+          </tr>
+          <tr>
+            <td>Eficiência de navegação</td>
+            <td>cliques</td>
+            <td>&le; 8</td>
+            <td>&le; 5</td>
+          </tr>
+      
+          <tr>
+            <td rowspan="2">Proteção ao Erro</td>
+            <td>Taxa de erros do usuário</td>
+            <td>%</td>
+            <td>&le; 10</td>
+            <td>&le; 5</td>
+          </tr>
+          <tr>
+            <td>Taxa de recuperação de erros</td>
+            <td>%</td>
+            <td>&ge; 80</td>
+            <td>&ge; 95</td>
+          </tr>
+      
+          <tr>
+            <td rowspan="2">Estética da Interface</td>
+            <td>Satisfação visual</td>
+            <td>1–5</td>
+            <td>&ge; 3</td>
+            <td>&ge; 4</td>
+          </tr>
+          <tr>
+            <td>Atratividade percebida</td>
+            <td>1–5</td>
+            <td>&ge; 3</td>
+            <td>&ge; 4</td>
+          </tr>
+      
+          <tr>
+            <td rowspan="2">Acessibilidade</td>
+            <td>Conformidade WCAG 2.1 AA</td>
+            <td>%</td>
+            <td>&ge; 85</td>
+            <td>&ge; 95</td>
+          </tr>
+          <tr>
+            <td>Suporte a tecnologias assistivas</td>
+            <td>Sim/Não</td>
+            <td>Sim</td>
+            <td>Sim</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>3.3 Técnicas de Avaliação</h3>
+      <ul>
+        <li>System Usability Scale (SUS) – questionário pós-tarefa; meta SUS ≥ 20 (aceitável) / ≥ 50 (excelente).</li>
+        <li>Testes de Usabilidade Moderados – 5–10 atendentes, cenários reais, coleta de tempos e erros.</li>
+        <li>Avaliação Heurística – 3–5 membros aplicam heurísticas Nielsen.</li>
+        <li>Teste de Acessibilidade WCAG – ferramentas Axe/Wave + inspeção manual.</li>
+        <li>Card Sorting & Tree Testing – validação da arquitetura de informação.</li>
+        <li>Análise de Logs – monitoramento de cliques e caminhos durante 2 semanas.</li>
+        <li>Eye Tracking (opcional) – identificar focos de atenção em telas críticas.</li>
+      </ul>
+
+      <h3>3.4 Instrumentos de Coleta</h3>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Instrumento</th><th>Objetivo</th><th>Formato</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Questionário SUS</td><td>Usabilidade percebida</td><td>Formulário online</td></tr>
+          <tr><td>2</td><td>Roteiro de Teste</td><td>Medir desempenho real</td><td>Script de 8 cenários</td></tr>
+          <tr><td>3</td><td>Checklist Heurístico</td><td>Violação de design</td><td>Planilha severidade</td></tr>
+          <tr><td>4</td><td>Formulário Observação</td><td>Registrar erros</td><td>Planilha estruturada</td></tr>
+          <tr><td>5</td><td>Relatório Acessibilidade</td><td>WCAG AA</td><td>Export Axe/Wave + notas</td></tr>
+          <tr><td>6</td><td>Dashboard Logs</td><td>Métricas de cliques</td><td>Grafana</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.5 Procedimento de Avaliação</h3>
+      <ul>
+        <li><strong>Preparação:</strong> ambiente de teste com base de produtos fictícia; recrutamento de 12 usuários (6 experientes, 6 novos).</li>
+        <li><strong>Execução de Sessões Moderadas:</strong> coleta de tempo, cliques, erros; aplicação do SUS.</li>
+        <li><strong>Avaliação Heurística:</strong> especialistas registram problemas e severidade.</li>
+        <li><strong>Acessibilidade:</strong> varredura automática + auditoria manual de 10 telas.</li>
+        <li><strong>Card Sorting:</strong> sessão remota com 15 usuários para validar categorias.</li>
+        <li><strong>Logs em Produção:</strong> análise de duas semanas de uso real.</li>
+        <li><strong>Síntese:</strong> cálculo do SUS médio; comparação de métricas com metas; painel de calor de prioridades.</li>
+      </ul>
+
+      <h3>3.6 Cronograma da Fase 2 (Usabilidade)</h3>
+      <table>
+        <thead>
+          <tr><th>Atividade</th><th>Duração</th><th>Responsáveis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Definição final de métricas</td><td>2 dias</td><td>membros</td></tr>
+          <tr><td>Criação do questionário SUS</td><td>3 dias</td><td>membros</td></tr>
+          <tr><td>Desenvolvimento de roteiros/scripts</td><td>5 dias</td><td>membros</td></tr>
+          <tr><td>Preparação de ambiente</td><td>2 dias</td><td>membros</td></tr>
+          <tr><td>Configuração de dashboards</td><td>3 dias</td><td>membros</td></tr>
+          <tr><td>Validação com stakeholders</td><td>1 dia</td><td>membros</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3"><strong>Total: 16 dias úteis</strong></td></tr>
+        </tfoot>
+      </table>
+
+      <h3>3.7 Resultados Esperados</h3>
+      <ul>
+        <li>SUS ≥ 50 (excelente);</li>
+        <li>Tempo médio de tarefa ≤ 60 s;</li>
+        <li>Taxa de erros ≤ 5 %;</li>
+        <li>Conformidade WCAG AA ≥ 95 %;</li>
+        <li>Relatório priorizado de problemas de interface.</li>
+      </ul>
+    </section>
+    <section>
+        <h2>4. Gestão do Projeto – PSM/CID</h2>
+  
+        <h3>4.1 Calendário do Projeto</h3>
+        <ul>
+          <li>Cronograma global baseado em Gantt no Trello, cobrindo Fases 1–4 e gestão.</li>
+          <li>Marcos principais: conclusão Fase 2 (D+30), execução de testes (D+50), relatório final (D+70).</li>
+        </ul>
+  
+        <h3>4.2 Processo Adotado</h3>
+        <p>O grupo utiliza um processo incremental com Sprints de 2 semanas:</p>
+        <ul>
+          <li><strong>Sprint 0:</strong> setup ambiente, definição métricas (concluído).</li>
+          <li><strong>Sprint 1:</strong> criação de instrumentos; revisão stakeholders.</li>
+          <li><strong>Sprint 2:</strong> execução testes piloto; ajustes.</li>
+          <li><strong>Sprint 3:</strong> coleta oficial; análise e relatório.</li>
+        </ul>
+  
+        <h3>4.3 Performance do Processo</h3>
+        <ul>
+          <li>Até o momento, cronograma cumprido em 90 %.</li>
+          <li>Ajuste realizado: extensão de Sprint 1 em +2 dias para refinar questionário.</li>
+          <li>Pontos positivos: comunicação ágil via Slack;</li>
+          <li>Pontos negativos: disponibilidade limitada de usuários.</li>
+        </ul>
+  
+        <h3>4.4 Custo e Recursos</h3>
+        <table>
+          <thead>
+            <tr><th>Recurso</th><th>Estimativa</th><th>Observação</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Horas Pessoa 1</td><td>40 h</td><td>Planejamento Fase 1</td></tr>
+            <tr><td>Horas Pessoa 2</td><td>80 h</td><td>Liderança Fase 2</td></tr>
+            <tr><td>Horas Pessoa 3</td><td>60 h</td><td>Design instrumentos</td></tr>
+            <tr><td>Horas Pessoa 4</td><td>50 h</td><td>Execução testes</td></tr>
+            <tr><td>Horas Pessoa 5</td><td>30 h</td><td>Gestão projeto</td></tr>
+            <tr><td>Ferramentas</td><td>R$ 1.500</td><td>JMeter, SonarQube, Axe licenças</td></tr>
+            <tr><td>Infraestrutura</td><td>R$ 800</td><td>Servidor teste + backups</td></tr>
+            <tr><td><strong>Total</strong></td><td><strong>R$ 2.300 + 260 h</strong></td><td>Custos fictícios</td></tr>
+          </tbody>
+        </table>
+  
+        <h3>4.5 Divisão de Responsabilidades</h3>
+        <table>
+          <thead>
+            <tr><th>Integrante</th><th>Responsabilidade Principal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pessoa 1</td><td>Fase 1 – Propósito</td></tr>
+            <tr><td>Pessoa 2</td><td>Fase 2 – Usabilidade</td></tr>
+            <tr><td>Pessoa 3</td><td>Fase 3 – Projetar</td></tr>
+            <tr><td>Pessoa 4</td><td>Fase 4 – Executar</td></tr>
+            <tr><td>Pessoa 5</td><td>Gestão PSM/CID</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>5. Q-RAPIDS – Usabilidade</h2>
+        <p>A avaliação da qualidade do AgroMart vai além da conformidade com a ISO/IEC 25010. Para alinhar a melhoria contínua da usabilidade ao ciclo incremental do projeto, a equipe incorporou o modelo Q-RAPIDS (Quality-Aware Rapid Software Development), que promove o desenvolvimento ágil com foco em qualidade, por meio de evidências empíricas.</p>
+        <p>O Q-RAPIDS permite integrar métricas extraídas de logs de uso, testes e feedback de usuários a um painel estratégico de monitoramento da qualidade. Isso permite decisões técnicas e de produto mais acertadas, a partir da observação de padrões reais de uso.</p>
+        <p>No AgroMart, a aplicação do Q-RAPIDS está centrada na característica de usabilidade. Foram definidos indicadores compostos, baseados em tempo médio de execução de tarefas, taxa de erros, número de cliques e taxa de sucesso nas interações. Esses dados alimentam visualizações periódicas em um painel de qualidade, com três componentes principais: o Indicador de Usabilidade Global (escala de 0 a 100), a Tendência Temporal da Usabilidade (detectando oscilações após novas versões) e o Mapa de Calor Funcional (destacando áreas da interface com maior incidência de erros ou baixa eficiência).</p>
+        <p>Essa estratégia fortalece a gestão da qualidade no AgroMart e contribui para uma experiência de uso mais eficiente, agradável e inclusiva.</p>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgroMart - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
