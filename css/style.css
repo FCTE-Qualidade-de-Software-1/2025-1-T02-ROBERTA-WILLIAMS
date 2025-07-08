@@ -1,4 +1,4 @@
-/* Reset básico */
+/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
@@ -15,21 +15,22 @@ body {
   flex-direction: column;
 }
 
+/* NAVBAR */
 nav {
-  background-color: #66bb6a; /* verde claro */
+  background-color: #66bb6a;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -39,6 +40,7 @@ nav ul li a:hover {
   color: #aed581;
 }
 
+/* CABEÇALHO */
 header {
   text-align: center;
   margin: 3rem 1rem 2rem;
@@ -50,37 +52,92 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
+/* CONTEÚDO PRINCIPAL */
 main {
   flex-grow: 1;
   padding: 0 2rem 3rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 section {
-  margin-bottom: 2.5rem;
-  align-items: center !important;
+  margin-bottom: 3rem;
 }
 
 section h2 {
   color: #388e3c;
+  font-size: 2rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #66bb6a;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.4rem;
 }
 
-footer {
-  background: #66bb6a;
+/* TABELAS */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+thead tr {
+  background-color: #66bb6a;
   color: white;
-  padding: 2rem 1rem;
-  text-align: center;
+  font-weight: 700;
 }
 
+tbody tr {
+  background-color: #f5f7fa;
+  transition: background-color 0.25s ease;
+}
+
+tbody tr:hover {
+  background-color: #e0f2e9;
+}
+
+th, td {
+  padding: 14px 20px;
+  text-align: left;
+  border: none;
+}
+
+/* TEXTO E TIPOGRAFIA */
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: #388e3c;
+}
+
+p {
+  margin: 0.5rem 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0.5rem 0 0.5rem 1.5rem;
+  color: #444;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* PARTICIPANTES */
 .participants {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 
@@ -96,7 +153,7 @@ footer {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 0.5rem;
   border: 3px solid #aed581;
   transition: transform 0.3s ease;
@@ -109,96 +166,49 @@ footer {
 .participant-name {
   font-weight: 600;
   font-size: 1rem;
+  text-align: center;
 }
 
-li ul {
-  margin-left: 2rem;
-}
-
-/* Estilo para tabelas do Abstraction Sheet */
-
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-top: 1rem;
-  font-size: 1rem;
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-thead tr {
-  background-color: #66bb6a;
+/* RODAPÉ */
+footer {
+  background: #66bb6a;
   color: white;
-  font-weight: 700;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-tbody tr {
-  background-color: #f5f7fa;
-  transition: background-color 0.25s ease;
-  cursor: default;
-}
-
-tbody tr:hover {
-  background-color: #e0f2e9;
-}
-
-th, td {
-  padding: 12px 20px;
-  text-align: left;
-  border: none;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 1.25rem;
-  margin-top: 2rem;
-  color: #388e3c;
-}
-
-p, ul {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: #444;
-  line-height: 1.5;
-}
-
-ul li {
-  margin-bottom: 0.3rem;
-}
-
-/* Para responsividade simples */
+/* TABELA RESPONSIVA */
 @media (max-width: 600px) {
   table, thead, tbody, th, td, tr {
     display: block;
   }
+
   thead tr {
     display: none;
   }
+
   tbody tr {
-    margin-bottom: 1rem;
     background: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
   }
+
   tbody td {
     padding-left: 50%;
     position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+
   tbody td::before {
     content: attr(data-label);
     position: absolute;
-    left: 15px;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
     font-weight: 700;
-    white-space: nowrap;
+    color: #333;
   }
 }
