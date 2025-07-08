@@ -32,138 +32,245 @@
     </section>
 
     <section>
-      <h2>Objetivo de Medição 1</h2>
-      <p>
-        Analisar o processo de cadastro e validação de fornecedores, com o propósito de avaliar a qualidade dos dados inseridos, com respeito à completude, correção e agilidade do processo, do ponto de vista da equipe de garantia da qualidade, no contexto da manutenção e crescimento sustentável da plataforma Agromart.
-      </p>
-    </section>
+<section>
+  <h2>Objetivos de Medição</h2>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead style="background-color: #e0f2f1;">
+      <tr>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Objeto</th>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Propósito</th>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Foco da Qualidade</th>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Ponto de Vista</th>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Contexto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">AgroMart</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Avaliar</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Adequação Funcional</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Desenvolvedor</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Qualidade de Software 1</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">AgroMart</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Avaliar</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Confiabilidade</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Desenvolvedor</td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">Qualidade de Software 1</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-    <section>
-      <h2>Questões e Hipóteses</h2>
+<section>
+  <h2>Questões e Hipóteses</h2>
 
-      <h3>Q1: Qual o nível de completude dos cadastros de fornecedores?</h3>
-      <p><strong>Hipótese Q1:</strong> Pelo menos 90% dos cadastros de fornecedores possuem todos os campos obrigatórios preenchidos corretamente.</p>
+  <h3>Objetivo de Medição 1 – Adequação Funcional</h3>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead style="background-color: #f1f8e9;">
+      <tr>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Questão</th>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Hipótese</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Q1. As interfaces principais oferecem suporte completo às funcionalidades previstas?
+        </td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Pelo menos 85% das funções essenciais disponíveis nas interfaces principais estão implementadas conforme os requisitos definidos.
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Q2. As ações fundamentais realizadas no sistema apresentam comportamento correto e consistente?
+        </td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          90% das interações voltadas à compra e ao cadastro de produtos ocorrem sem falhas durante o uso regular.
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Q3. A solução atende adequadamente usuários com familiaridade média com tecnologia?
+        </td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Pelo menos 80% dos usuários com conhecimento intermediário conseguem utilizar as principais funcionalidades sem necessitar de ajuda externa.
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-      <h3>Q2: Qual a taxa de inconsistência ou erros nos dados fornecidos (ex.: CNPJ inválido, CEP inexistente)?</h3>
-      <p><strong>Hipótese Q2:</strong> Menos de 5% dos cadastros apresentam inconsistências ou erros de validação automática.</p>
+  <h3 style="margin-top: 2rem;">Objetivo de Medição 2 – Confiabilidade</h3>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead style="background-color: #e3f2fd;">
+      <tr>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Questão</th>
+        <th style="border: 1px solid #ccc; padding: 0.5rem;">Hipótese</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Q1. O sistema responde de maneira estável a situações inesperadas durante o uso?
+        </td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Em pelo menos 85% dos casos, o sistema fornece respostas claras e orientadas à recuperação quando ocorrem falhas.
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          Q2. A implementação do sistema favorece a execução previsível das funcionalidades?
+        </td>
+        <td style="border: 1px solid #ccc; padding: 0.5rem;">
+          No mínimo 80% dos requisitos implementados possuem testes que validam seu comportamento e garantem consistência em diferentes execuções.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-      <h3>Q3: Qual é o tempo médio para validar e aprovar um cadastro de fornecedor?</h3>
-      <p><strong>Hipótese Q3:</strong> O tempo médio de aprovação de um cadastro é inferior a 24 horas após o envio.</p>
-    </section>
-    <section>
-        <h2>Relação entre Objetivo de Medição, Questões e Métricas</h2>
-        <p><strong>Objetivo de Medição 1:</strong> Avaliar a qualidade dos cadastros de fornecedores</p>
-      
-        <ul>
-          <li><strong>Q1: Nível de completude</strong><br>
-            Métrica 1: % de cadastros com todos os campos obrigatórios preenchidos
-          </li>
-          <li><strong>Q2: Taxa de inconsistência</strong><br>
-            Métrica 2: % de cadastros com erros de validação (ex.: CNPJ, CEP, e-mail)
-          </li>
-          <li><strong>Q3: Tempo médio de validação</strong><br>
-            Métrica 3: Média de horas entre envio do cadastro e aprovação
-          </li>
-        </ul>
-      </section>
-      
-    <section>
-        <h2>Abstraction Sheet – Objetivo de Medição 1</h2>
-        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-          <thead style="background-color: #e0f2f1;">
-            <tr>
-              <th style="border: 1px solid #ccc; padding: 0.5rem;">Objeto</th>
-              <th style="border: 1px solid #ccc; padding: 0.5rem;">Propósito</th>
-              <th style="border: 1px solid #ccc; padding: 0.5rem;">Foco da Qualidade</th>
-              <th style="border: 1px solid #ccc; padding: 0.5rem;">Ponto de Vista</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Cadastro de Fornecedores</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Avaliação</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Completude, consistência e agilidade</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Equipe de Garantia de Qualidade</td>
-            </tr>
-          </tbody>
-        </table>
-    </section>
-      
-      <section>
-        <h2>Foco da Qualidade</h2>
-        <p>Número de problemas nos cadastros:</p>
-        <ul>
-          <li>Por tipo de campo obrigatório (CNPJ, endereço, contato, etc.)</li>
-          <li>Por tipo de erro (faltante, inválido, inconsistente)</li>
-          <li>Por frequência</li>
-          <li>Por origem (formulário manual, integração externa)</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Fatores de Variação</h2>
-        <ul>
-          <li>Grau de revisão automática (validação de campos)</li>
-          <li>Nível de treinamento dos usuários</li>
-          <li>Integração com sistemas externos (ex.: Receita Federal, Correios)</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Hipóteses de Referência (Estimativas)</h2>
-        <p>Distribuição de problemas:</p>
-        <ul>
-          <li>Campos completos e válidos: 90%</li>
-          <li>Campos incompletos: 7%</li>
-          <li>Campos inconsistentes: 3%</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Impacto dos Fatores de Variação</h2>
-        <p>
-          Quanto maior o nível de validação automática e o treinamento do usuário, menor será a taxa de erros e inconsistências nos cadastros recebidos.
-        </p>
-      </section>
-      
-      <section>
-        <h2><u>Matrícula | Nome completo | Contribuição (%)</u></h2>
-        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-          <thead style="background-color: #e0f2f1;">
-            <tr>
-              <th style="border: 1px solid #ccc; padding: 0.5rem;">Matrícula</th>
-              <th style="border: 1px solid #ccc; padding: 0.5rem;">Nome completo</th>
-              <th style="border: 1px solid #ccc; padding: 0.5rem;">Contribuição (%)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">202045965</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Augusto Campos Duarte</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">22%</td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">202017521</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Algusto Rodrigues Caldas</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">22%</td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">200067095</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Lucas Antunes de Avelar</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">12%</td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">222006777</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Guilherme Oliveira Monteiro</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">22%</td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">221021975</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">Gabriel Santos Monteiro</td>
-              <td style="border: 1px solid #ccc; padding: 0.5rem;">22%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+
+<section>
+  <h2>Abstraction Sheet – Objetivo de Medição 1 – Adequação Funcional</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Campo</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Campo">Objeto</td>
+        <td data-label="Descrição">Funcionalidades principais do AgroMart</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Propósito</td>
+        <td data-label="Descrição">Avaliar</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Foco da Qualidade</td>
+        <td data-label="Descrição">Adequação Funcional</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Ponto de Vista</td>
+        <td data-label="Descrição">Desenvolvedor</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Fatores de Variação</td>
+        <td data-label="Descrição">
+          <ul>
+            <li>Clareza na definição de requisitos funcionais</li>
+            <li>Consistência entre requisitos e implementação</li>
+            <li>Experiência do usuário com tecnologia intermediária</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Hipóteses</td>
+        <td data-label="Descrição">
+          <ul>
+            <li>85% das funções essenciais estão implementadas conforme os requisitos definidos</li>
+            <li>90% das ações de compra e cadastro ocorrem sem erros</li>
+            <li>80% dos usuários intermediários utilizam o sistema sem suporte técnico</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Impacto</td>
+        <td data-label="Descrição">
+          <ul>
+            <li>Falhas entre requisitos e execução afetam a percepção de qualidade</li>
+            <li>Erros em tarefas-chave reduzem confiança</li>
+            <li>Interfaces confusas limitam autonomia do usuário</li>
+          </ul>
+        </td>
+      </tr>
+        <td data-label="Dimensão">Métricas</td>
+        <td data-label="Descrição">
+          <strong>Nome:</strong> Taxa de Conformidade Funcional<br>
+          <strong>Descrição:</strong> Mede a proporção de funcionalidades principais que operam conforme os requisitos definidos.<br>
+          <strong>Elementos:</strong><br>
+          A = Nº de funcionalidades conformes<br>
+          B = Nº total de funcionalidades previstas<br>
+          <strong>Foco:</strong> Externo
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<section>
+  <h2>Abstraction Sheet – Objetivo de Medição 2 – Confiabilidade</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Campo</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Campo">Objeto</td>
+        <td data-label="Descrição">Comportamento do sistema AgroMart em situações inesperadas</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Propósito</td>
+        <td data-label="Descrição">Avaliar</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Foco da Qualidade</td>
+        <td data-label="Descrição">Confiabilidade</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Ponto de Vista</td>
+        <td data-label="Descrição">Desenvolvedor</td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Fatores de Variação</td>
+        <td data-label="Descrição">
+          <ul>
+            <li>Robustez no tratamento de exceções</li>
+            <li>Presença de testes automatizados</li>
+            <li>Clareza nas mensagens de falha</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Hipótese</td>
+        <td data-label="Descrição">
+          <ul>
+            <li>85% dos erros recebem respostas claras e orientadas à recuperação</li>
+            <li>80% dos requisitos têm testes automatizados e critérios de aceitação</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Campo">Impacto</td>
+        <td data-label="Descrição">
+          <ul>
+            <li>Respostas técnicas reduzem capacidade de recuperação</li>
+            <li>Ausência de testes compromete estabilidade e previsibilidade</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Dimensão">Métricas</td>
+        <td data-label="Descrição">
+          <strong>Nome:</strong> Cobertura de Respostas a Falhas<br>
+          <strong>Descrição:</strong> Avalia se o sistema fornece respostas úteis e compreensíveis diante de erros.<br>
+          <strong>Elementos:</strong><br>
+          A = Nº de falhas tratadas com mensagens úteis<br>
+          B = Nº total de falhas identificadas<br>
+          <strong>Foco:</strong> Externo
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
         
       
   </main>

@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #aed581; 
+  color: #aed581;
 }
 
 header {
@@ -70,7 +70,7 @@ section h2 {
 }
 
 footer {
-  background: #66bb6a; 
+  background: #66bb6a;
   color: white;
   padding: 2rem 1rem;
   text-align: center;
@@ -113,4 +113,92 @@ footer {
 
 li ul {
   margin-left: 2rem;
+}
+
+/* Estilo para tabelas do Abstraction Sheet */
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  font-size: 1rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead tr {
+  background-color: #66bb6a;
+  color: white;
+  font-weight: 700;
+}
+
+tbody tr {
+  background-color: #f5f7fa;
+  transition: background-color 0.25s ease;
+  cursor: default;
+}
+
+tbody tr:hover {
+  background-color: #e0f2e9;
+}
+
+th, td {
+  padding: 12px 20px;
+  text-align: left;
+  border: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  color: #388e3c;
+}
+
+p, ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+ul li {
+  margin-bottom: 0.3rem;
+}
+
+/* Para responsividade simples */
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    display: none;
+  }
+  tbody tr {
+    margin-bottom: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  tbody td {
+    padding-left: 50%;
+    position: relative;
+  }
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
 }
