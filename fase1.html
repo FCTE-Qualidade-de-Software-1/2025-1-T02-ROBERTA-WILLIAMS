@@ -1,28 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Fase 1 – Propósito da Avaliação</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-    h2 {
-      margin-top: 2rem;
-      color: #2e7d32;
-    }
-    ul {
-      margin-left: 1.5rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fase 1 – Requisitos de Avaliação</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <nav>
     <ul>
       <li><a href="index.html">Início</a></li>
-      <li><a href="GQM.HTML">GQM</a></li>
+      <li><a href="GQM.html">GQM</a></li>
       <!-- <li><a href="square.html">Square</a></li> -->
       <li><a href="fase1.html">Fase 1 - Propósito da Avaliação</a></li>
       <li><a href="fase2.html">Fase 2 - Avaliação de Qualidade e Gestão</a></li>
@@ -31,53 +19,138 @@
   </nav>
 
   <header>
-    <h1>Propósito da Avaliação</h1>
+    <h1>Fase 1 – Estabelecer Requisitos de Avaliação</h1>
+    <p>Planejamento de Qualidade para o sistema AgroMart</p>
   </header>
 
   <main>
     <section>
-      <h2>Objetivo Geral</h2>
-      <p>Avaliar a qualidade do sistema AgroMart, que dá suporte à operação de uma agropecuária multicanal, com foco na eficiência da gestão de produtos agropecuários e atendimento ao cliente. A avaliação será orientada pelos critérios da norma ISO/IEC 25010.</p>
-    </section>
-
-    <section>
-      <h2>Justificativa</h2>
-      <p>A AgroMart oferece uma ampla variedade de produtos voltados ao bem-estar animal e agricultura familiar, incluindo rações, medicamentos veterinários, sementes, adubos e higiene animal. Como a operação envolve grande volume de produtos e clientes, um sistema confiável e fácil de usar é essencial para:</p>
-      <ul>
-        <li>Garantir a fluidez no processo de vendas e atendimento;</li>
-        <li>Reduzir falhas operacionais (ex: estoques inconsistentes);</li>
-        <li>Aumentar a satisfação do cliente (ex: agilidade no atendimento e informações claras);</li>
-        <li>Apoiar o crescimento do negócio, mantendo a qualidade dos processos internos.</li>
+      <h2>Estabelecer o Propósito da Avaliação</h2>
+     <ul style="margin-left: 1.5rem;">
+        <li>Avaliar o sistema <strong>AgroMart</strong> com o objetivo de verificar se o software atende de forma eficiente, segura e confiável às necessidades de pequenos agricultores e consumidores.</li>
+        <li>Identificar oportunidades de melhoria com foco em <strong>adequação funcional</strong> e <strong>confiabilidade</strong>.</li>
+        <li>Garantir conformidade com os critérios da norma <strong>ISO/IEC 25010</strong>, com ênfase em:
+          <ul>
+            <li>Usabilidade (ênfase: 4)</li>
+            <li>Adequação Funcional (ênfase: 5)</li>
+            <li>Confiabilidade (ênfase: 4)</li>
+            <li>Eficiência (ênfase: 1)</li>
+            <li>Segurança (ênfase: 1)</li>
+          </ul>
+        </li>
       </ul>
     </section>
 
     <section>
-      <h2>Stakeholders da Avaliação</h2>
-      <ul>
-        <li><strong>Produtores:</strong> precisam de um sistema rápido e simples para registrar produtos.</li>
-        <li><strong>Clientes da AgroMart:</strong> usuários indiretos impactados pela qualidade do sistema (agilidade, clareza, erros).</li>
-        <li><strong>Equipe Técnica (TI):</strong> responsável por manter e melhorar o sistema.</li>
-      </ul>
+      <h2>Identificar Tipos de Produtos a Serem Avaliados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Componente</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Interfaces Web</td>
+            <td>Cadastro, controle de produtos, pedidos, perfil etc.</td>
+          </tr>
+          <tr>
+            <td>Aplicativo Mobile</td>
+            <td>Busca de lojas, pedidos, perfil, histórico etc.</td>
+          </tr>
+          <tr>
+            <td>Textos e Mensagens</td>
+            <td>Mensagens de erro, textos de navegação e feedbacks do sistema.</td>
+          </tr>
+          <tr>
+            <td>Imagens e Elementos UI</td>
+            <td>Ícones, ilustrações e disposição visual dos elementos de interface.</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section>
-      <h2>Características de Qualidade Focadas (com base na ISO/IEC 25010)</h2>
-      <p><em>Tabela representativa aqui conforme imagem mencionada.</em></p>
+      <h2>Especificar Modelo de Qualidade</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>Subcaracterísticas Avaliadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Adequação Funcional</td>
+            <td>Atendimento completo às funcionalidades centrais do sistema.</td>
+          </tr>
+          <tr>
+            <td>Confiabilidade</td>
+            <td>Tolerância a falhas, comportamento previsível, recuperação de erros.</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section>
-      <h2>Resultados Esperados</h2>
-      <ul>
-        <li>Uma análise completa das características mais críticas para o funcionamento eficiente do AgroMart;</li>
-        <li>Um diagnóstico dos principais pontos fracos e sugestões práticas de melhoria;</li>
-        <li>Dados e métricas que ajudem a guiar futuras melhorias no sistema;</li>
-        <li>Um plano de ação para aumentar a satisfação dos stakeholders.</li>
-      </ul>
+      <h2>Conexão com os Objetivos de Desenvolvimento Sustentável (ODS)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ODS</th>
+            <th>Objetivo</th>
+            <th>Contribuição do AgroMart</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ODS 2</td>
+            <td>Fome Zero e Agricultura Sustentável</td>
+            <td>Conecta consumidores a produtores locais, incentivando produção agroecológica.</td>
+          </tr>
+          <tr>
+            <td>ODS 8</td>
+            <td>Trabalho Decente e Crescimento Econômico</td>
+            <td>Gera oportunidades digitais e renda para pequenos agricultores.</td>
+          </tr>
+          <tr>
+            <td>ODS 9</td>
+            <td>Inovação e Infraestrutura</td>
+            <td>Implementa tecnologia segura e acessível para o setor agro.</td>
+          </tr>
+          <tr>
+            <td>ODS 12</td>
+            <td>Consumo e Produção Responsáveis</td>
+            <td>Promove alimentação local, saudável e consciente.</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
+
+    <section>
+    <h2>Q-Rapids – Integração com o Plano de Medição</h2>
+    <p>
+      O <strong>Q-Rapids</strong> (Quality-Aware Rapid Software Development) é um framework voltado ao suporte à tomada de decisão baseada em qualidade durante o desenvolvimento ágil. Ele utiliza evidências técnicas extraídas diretamente do sistema, como dados de repositório de código, testes automatizados, logs e feedback de usuários, organizando essas informações em indicadores que orientam ações de melhoria contínua.
+    </p>
+
+    <h3>Plano para Obter as Métricas do Objetivo de Adequação Funcional usando Q-Rapids</h3>
+    <p>
+      A <strong>adequação funcional</strong>, foco do primeiro objetivo de medição, está relacionada à capacidade do sistema em oferecer funcionalidades que satisfaçam as necessidades declaradas dos usuários. Esse objetivo possui métricas centradas na completude da implementação funcional e na operação correta das funcionalidades principais (como compra e cadastro de produtos).
+    </p>
+
+    <h3>Plano para Obter as Métricas do Objetivo de Confiabilidade usando Q-Rapids</h3>
+    <p>
+      A <strong>confiabilidade</strong> busca garantir que o sistema mantenha um comportamento consistente, mesmo sob condições adversas ou uso inesperado. As métricas desse objetivo incluem a qualidade das mensagens de erro e a existência de testes automatizados cobrindo critérios de aceitação.
+    </p>
+    </section>
+
+
+
   </main>
 
   <footer>
-    <p>&copy; 2025 AgroMart - Todos os direitos reservados</p>
+    <p>&copy; 2025 AgroMart - Avaliação de Qualidade de Software</p>
   </footer>
 </body>
 </html>
